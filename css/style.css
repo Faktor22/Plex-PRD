@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+ :root {
+    --blue: #1f1d59;
+    --white: #fff;
+    --grey: #f4f4f4;
+    --yellow: #FFCE60;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: var(--grey);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--blue);
+    margin: 0.8rem 0;
+    font-weight: 600;
+}
+
+p {
+    color: var(--blue);
+    margin: 1rem 0;
+    line-height: 1.5rem;
+}
+
+ol {
+    padding: 0 3rem;
+}
+
+li {
+    color: var(--blue);
+    line-height: 1.5rem;
+}
+
+hr {
+    border: 0.05rem solid var(--grey);
+    margin: 1rem 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1f1d59;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e2e6eb;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 25px;
+}
+
+.logo {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 95px;
+    position: fixed;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+main {
+    position: absolute;
+    display: inline-block;
+    width: calc(100% - 150px);
+    left: 100px;
+    min-height: calc(100vh - 62px);
+    transition: 0.5s;
+}
+
+.topbar nav {
+    display: flex;
+    position: fixed;
+    /* top: 15px; */
+    left: 125px;
+    right: 25px;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    /* padding: 10px 0 15px 0; */
+    /* background: var(--grey); */
+}
+
+.topbar nav a {
+    color: var(--blue);
+    background: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.125rem rgb(31 29 81 / 15%);
+}
+
+.topbar nav a:hover,
+.topbar nav a.active-top {
+    background: var(--yellow);
+}
+
+nav .bg-blue {
+    color: var(--white) !important;
+    background: var(--blue) !important;
+}
+
+.content {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 25px;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    scroll-behavior: smooth;
+    height: calc(100vh - 117px);
+    box-shadow: 0 0.125rem 0.125rem rgb(31 29 81 / 15%);
+}
+
+.intro {
+    margin-top: 4.3rem;
+}
+
+.sub {
+    background-color: aliceblue;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.navigation {
+    margin-top: 4.3rem;
+    position: fixed;
+    width: 76px;
+    height: calc(100vh - 117px);
+    background: #1f1d59;
+    border-left: 10px solid #1f1d59;
+    transition: 0.5s;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* Curve outside */
+
+.navigation ul li:hover a::before,
+.active::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 15%;
+    box-shadow: 35px 35px 0 10px var(--grey);
+    pointer-events: none;
+}
+
+.navigation ul li:hover a::after,
+.active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 35px;
+    height: 50px;
+    background: transparent;
+    border-radius: 22%;
+    box-shadow: 35px -35px 0 10px var(--grey);
+    pointer-events: none;
+}
+
+.navigation ul li:hover,
+.active {
+    background: var(--grey);
+}
+
+.navigation ul li .logo {
+    margin: 30px 0 40px 20px;
+    pointer-events: none;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.active a {
+    color: var(--blue) !important;
+}
+
+.navigation ul li:hover a {
+    color: var(--blue);
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 130px;
+    right: -100%;
+    top: 50%;
+    background-color: #fff0d0;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 3;
+}
+
+.navigation ul li:hover .tooltiptext {
+    visibility: visible;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 65px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+}
+
+@media only screen and (max-width: 1115px) {
+    main {
+        width: calc(100% - 80px);
+        left: 85px;
+    }
+    .topbar nav {
+        display: none;
+    }
+    .intro {
+        margin-top: 0;
+    }
+    .content {
+        height: calc(100vh - 53px);
+        padding: 5px 10px;
+    }
+    .container {
+        margin: 7px;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+}
