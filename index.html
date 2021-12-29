@@ -2,10 +2,12 @@
 <html lang="nl">
 
 <head>
+    <!-- v.1.0 Amir Fahimnia -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
     <title>Product Requirements Document</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js" defer></script>
 </head>
@@ -14,73 +16,86 @@
     <!--container-->
     <div class="container">
         <!--logo-->
-        <img src="img/logo.png" alt="" class="logo" />
+        <img src="img/logo.svg" alt="" class="logo" />
         <!--navigation-->
-        <div class="navigation">
+        <nav class="navigation">
             <ul>
-                <li class="links">
+                <li>
                     <!-- <span class="tooltiptext">New project list</span> -->
-                    <a href="#">
+                    <a href="contributors.html">
                         <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
                     </a>
                 </li>
-                <li class="links active">
+                <li class="active">
                     <a href="#intro">
                         <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="design.html">
                         <span class="icon"><ion-icon name="color-palette-outline"></ion-icon></span>
                         <span class="title"></span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="code.html">
                         <span class="icon"><ion-icon name="code-slash-outline"></ion-icon></span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="git-merge-outline"></ion-icon></span>
+                    <a href="scope.html">
+                        <span class="icon"><ion-icon name="git-compare-outline"></ion-icon></span>
                     </a>
                 </li>
             </ul>
-        </div>
+            <p class="version">v.1.0</p>
+        </nav>
         <!--main-->
         <main>
             <!--topbar-->
             <div class="topbar">
                 <nav>
-                    <a class="active-top" href="#intro">Intro & Goal</a>
-                    <a href="#who">Who’s it for</a>
-                    <a href="#why">Why build it?</a>
-                    <a href="#what">What is it?</a>
-                    <a href="#tech">Tech Notes</a>
-                    <a class="bg-blue" href="#">Gitlab</a>
+                    <li><a class="active-topbar btn-plex btn-plex-yellow" href="#intro">Intro & Goal</a></li>
+                    <li><a class="btn-plex btn-plex-white" href="#who">Who’s it for</a></li>
+                    <li><a class="btn-plex btn-plex-white" href="#why">Why build it?</a></li>
+                    <li><a class="btn-plex btn-plex-white" href="#what">What is it?</a></li>
+                    <li><a class="btn-plex btn-plex-white" href="#tech">UI/UX</a></li>
+                    <li><a class="btn-plex btn-plex-white" href="#tech">Code</a></li>
+                    <li><a class="btn-plex btn-plex-blue bg-blue" href="#"><span class="icon-intro"><ion-icon name="logo-github"></ion-icon></span></a></li>
                 </nav>
             </div>
             <!--content-->
-            <div class="content intro">
+            <div class="intro-page">
                 <a id="intro"></a>
                 <h1>Product Requirements Document</h1>
                 <hr>
-                <h2>Intro & Goal</h2>
-                <p><strong>Probleemstelling</strong></p>
-                <p>Het kost momenteel veel tijd en handmatig werk om projecten van Fontys te beheren en om deze te koppelen en te presenteren aan de (juiste) studenten.</p>
+                <h2>Overview</h2>
+                <ul class="list">
+                    <li>Goal:</li>
+                    <li>Stakeholders:
+                        <ul class="list">
+                            <li>Owner: @Name</li>
+                            <li>Design: @Name</li>
+                            <li>Development: @Name</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Background and strategic fit</h3>
+                <p>Provide a short summary of why this initiative is worth investing resources into and explain how it fits into the overall product strategy.</p>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra, neque non aliquam tincidunt, urna lacus ornare urna, eu rutrum lectus metus vel lorem. Quisque et iaculis velit. Maecenas vel leo in felis efficitur malesuada. Aenean
                     ut lectus in est tincidunt cursus vitae eu dui. Nulla ut libero eu sem egestas finibus. Integer mauris justo, finibus in ullamcorper ac, eleifend nec eros. Nullam at lacinia risus, eget varius nisi. In varius tortor at nunc efficitur
                     aliquam. Mauris quis ultrices metus, vitae tincidunt purus. Fusce ac hendrerit magna. Suspendisse nec nisl ut arcu vestibulum pretium ut sed ipsum. </p>
 
                 <a id="who"></a>
-                <h3 class="sub">Who’s it for?</h3>
+                <h3 class="sub-heading-blue">Who’s it for?</h3>
                 <ol>
                     <li><strong>Fontys University</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet placerat purus. Integer vel bibendum orci. Praesent sagittis imperdiet diam vel venenatis. Nam commodo metus tortor.</li>
                     <li><strong>Everyday Tech Students</strong> - students who follow the IT training</li>
                 </ol>
 
                 <a id="why"></a>
-                <h3 class="sub">Why build it?</h3>
+                <h3 class="sub-heading-blue">Why build it?</h3>
                 <ol>
                     <li>It’s something we personally enjoy using</li>
                     <li>Early, initial traction from “”</li>
@@ -89,7 +104,7 @@
                 </ol>
 
                 <a id="what"></a>
-                <h3 class="sub">What is it?</h3>
+                <h3 class="sub-heading-blue">What is it?</h3>
                 <ol>
                     <li><strong>Dashboard View (Teachers)</strong> - dashboard of Plex (all Teachers can view this)</li>
                     <li><strong>Dashboard View (Students)</strong> - dashboard of Plex (all Students can view this)</li>

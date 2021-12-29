@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <title>Scope</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <!--container-->
+    <div class="container">
+        <!--logo-->
+        <img src="img/logo.png" alt="" class="logo" />
+        <!--navigation-->
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <!-- <span class="tooltiptext">New project list</span> -->
+                    <a href="contributors.html">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#intro">
+                        <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="design.html">
+                        <span class="icon"><ion-icon name="color-palette-outline"></ion-icon></span>
+                        <span class="title"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="code.html">
+                        <span class="icon"><ion-icon name="code-slash-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="scope.html">
+                        <span class="icon"><ion-icon name="git-compare-outline"></ion-icon></span>
+                    </a>
+                </li>
+            </ul>
+            <p class="version">v.1.0</p>
+        </nav>
+        <!--main-->
+        <main>
+            <div class="intro-page sub-page">
+
+                <div class="sub-header">
+                    <h1>Scope</h1>
+                    <button class="btn-plex btn-plex-yellow">Check Gitlab<span class="icon-primary icon-code"><ion-icon name="arrow-redo-outline"></ion-icon></span></button>
+                </div>
+
+                <hr>
+                <h2>User stories and requirements</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra, neque non aliquam tincidunt, urna lacus ornare urna, eu rutrum lectus metus vel lorem. Quisque et iaculis velit. Maecenas vel leo in felis efficitur malesuada. Aenean
+                    ut lectus in est tincidunt cursus vitae eu dui. Nulla ut libero eu sem egestas finibus. Integer mauris justo, finibus in ullamcorper ac, eleifend nec eros. Nullam at lacinia risus, eget varius nisi. In varius tortor at nunc efficitur
+                    aliquam. Mauris quis ultrices metus, vitae tincidunt purus. Fusce ac hendrerit magna. Suspendisse nec nisl ut arcu vestibulum pretium ut sed ipsum. </p>
+
+                <!--userstories-->
+                <div class="userstories-container">
+                    <div class="userstories-todo">
+                        <p>Backlog - To do</p>
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als student, wil ik mijn top 3 van de aangeboden projecten kunnen kiezen, zodat de projectleider mijn voorkeur kan inzien</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>Keuze is per project aan te geven</li>
+                                    <li>Elke keuze kan maar 1 keer worden gegeven</li>
+                                    <li>Er kunnen maximaal 3 keuzes ingevuld worden</li>
+                                    <li>De keuze kan worden opgeslagen</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg project-select">Project select</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als projectleider en student, wil ik een gedetailleerde beschrijving van de projecten kunnen bekijken, zodat ik een weloverwogen keuze kan maken om een project wel- of niet als voorkeur op te geven</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>Per project is de titel, een uitgebreide description, categorieën, URL en de uploader te zien in een pop-up.</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg browsen-project">Browsen project</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als ik projectleider wil ik als ik een nieuw project aan DeX heb toegevoegd, dit project meteen in PLeX zien zodat ik deze kan toevoegen aan een lijst.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>nog uit te werken</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg project-select">Project select</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als ik projectleider wil ik als ik een nieuw project aan DeX heb toegevoegd, dit project meteen in PLeX zien zodat ik deze kan toevoegen aan een lijst.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>Projecten zijn te zien</li>
+                                    <li>Per project is de titel en categorieën te zien</li>
+                                    <li>De voorkeuren van de studenten zijn te zien</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg groep-vormen">Groep vormen</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als projectleider, wil ik een melding kunnen delen naar de geselecteerde groepen, zodat deelnemers toegang hebben tot de project opties</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>nog uit te werken</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg groep-vormen">Groep vormen</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als projectleider, wil ik dat de groepjes automatisch worden samengesteld, zodat er rekening wordt gehouden op basis van de top 3 en welke richting een deelnemer zich wilt focussen</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>nog uit te werken</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg groep-vormen">Groep vormen</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als projectleider, wil ik projecten in het overzicht kunnen zoeken met behulp van een zoekbalk, zodat ik een project snel kan vinden.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>nog uit te werken</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg browsen-project">Browsen project</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als projectleider, wil ik een gebruiksvriendelijke user interface, zodat projectleiders en deelnemers er snel en efficient mee kunnen werken.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>nog uit te werken</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg ux">UI / UX</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als projectleider, wil ik een deadline instellen, zodat het voor deelnemers duidelijk is wanneer zij hun keuze moeten doorgeven.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>nog uit te werken</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg groep-vormen">Groep vormen</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als deelnemer, wil ik inzage hebben in wie er uiteindelijk in mijn projectgroep zit, zodat ik een beeld heb wie er in mijn groep zit.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>nog uit te werken</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg groep-vormen">Groep vormen</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als projectleider, wil ik statistieken van de projecten kunnen inzien, zodat ik een goed beeld heb van de populariteit per project.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>nog uit te werken</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg project-select">Project select</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als deelnemer, wil ik dat het niet mogelijk is om meer dan drie voorkeuren op te geven zodat ik kan voorkomen dat ik teveel voorkeuren opgeef en daardoor niet de juiste projecten toegewezen krijg.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>nog uit te werken</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg groep-vormen">Groep vormen</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als deelnemer, wil ik projecten kunnen opslaan, zodat ik deze op een later moment nog eens terug kan lezen.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>nog uit te werken</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg browsen-project">Browsen project</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als deelnemer, wil ik een project kunnen selecteren als favorieten, zodat ik hierdoor mijn (top 3) voorkeurprojecten op een later tijdstip kenbaar kan maken aan de projectleider.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>nog uit te werken</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg project-select">Project select</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als projectleider, wil ik deelnemers kunnen toevoegen aan een projectlijst, zodat deelnemers hun voorkeur voor project kunnen aangeven.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>nog uit te werken</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg project-lijst">Project lijst</span></p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="userstories-done">
+                        <p>Done</p>
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als projectleider, wil ik de voorkeuren van de studenten kunnen zien, zodat ik naderhand eenvoudig projectgroepen kan maken met deelnemers die dezelfde voorkeur hebben.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>Geeft een lijst weer van de door de projectleider geselecteerde projecten</li>
+                                    <li>Per project is de titel, korte omschrijving en categorieën te zien</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg project-select">Project select</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als projectleider, wil ik een lijst kunnen samenstellen van projecten, zodat deze gegroepeerd aan deelnemers kunnen worden gepresenteerd.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>Geeft een lijst weer van de door de projectleider geselecteerde projecten</li>
+                                    <li>Per project is de titel, korte omschrijving en categorieën te zien</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg project-select">Project select</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als projectleider, wil ik een gebruiksvriendelijke User Interface hebben, zodat er een optimale usability ontstaat.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>Er moet een huisstijl aanwezig zijn die de user interface ondersteund</li>
+                                    <li>Prototypes worden gevalideerd met gebruikers</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg ux">UI / UX</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als student wil ik projecten in het overzicht kunnen filteren op architectuurlaag, zodat ik de disciplines met mijn voorkeur makkelijk kan vinden.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>Een knop per categorie die aan of uit waarmee je kunt filteren</li>
+                                    <li>Aan de knop is te zien of de filter actief is</li>
+                                    <li>Er kunnen verschillende filterknoppen tegelijk actief zijn</li>
+                                    <li>De categorien worden opgehaald uit DeX</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg project-select">Project select</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Als projectleider wil ik projecten in het overzicht kunnen filteren op categorie, zodat ik zeker weet dat ik een goede balans tussen de disciplines vind.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>Een knop per categorie die aan of uit waarmee je kunt filteren</li>
+                                    <li>Aan de knop is te zien of de filter actief is</li>
+                                    <li>Er kunnen verschillende filterknoppen tegelijk actief zijn</li>
+                                    <li>De categorien worden opgehaald uit DeX</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg project-select">Project select</span></p>
+                        </div>
+
+                        <div class="userstories-cards">
+                            <p class="userstorie-titel">Spike: Uitzoeken hoe een ORM werkt en toepassen in ons project.</p>
+                            <div class="acceptatie-container">
+                                <p class="acceptatie">Acceptatiecriteria</p>
+                                <ul class="list">
+                                    <li>Hibernate (ORM)</li>
+                                    <li>Seed maken</li>
+                                    <li>Basis gegevens voor script (voor test data, 10 projecten)</li>
+                                    <li>Docker opzetten</li>
+                                    <li>Welke klassen hebben we nodig? (entity's)</li>
+                                    <li>Bestaande code aanpassen</li>
+                                </ul>
+                            </div>
+                            <p class="categorie">Categorie: <span class="categorie-bg spike">Spike</span></p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

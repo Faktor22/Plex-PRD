@@ -1,14 +1,26 @@
-// Get the container element
-var navContainer = document.getElementById("navigation");
+// topbar active button
+let topBar = document.querySelectorAll(".topbar nav li a");
 
-// Get all links with class="links" inside the container
-var links = navContainer.getElementsByClassName("links");
+topBar.forEach(a => {
+    a.addEventListener("click", () => {
+        topBar.forEach(a => a.classList.remove("active-topbar"))
+        a.classList.add("active-topbar")
+    })
+})
 
-// Loop through the links and add the active class to the current/clicked links
-for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
+
+
+// let topbar = document.querySelectorAll(".topbar nav li a");
+
+// topbar.forEach(a => {
+//     a.addEventListener("click", () => {
+//         resetLinks();
+//         a.classList.add("active-topbar")
+//     })
+// })
+
+// function resetLinks() {
+//     topbar.forEach(a => {
+//         a.classList.remove("active-topbar")
+//     })
+// }
