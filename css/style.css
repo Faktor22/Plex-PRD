@@ -53,6 +53,10 @@ body {
     scrollbar-color: var(--grey-scroll) var(--grey-bg) !important;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -168,7 +172,7 @@ main {
     background-color: var(--blue-secondary);
     display: inline-block;
     padding: 10px;
-    margin-top: 1rem;
+    margin-top: 2rem;
     border-radius: 10px;
 }
 
