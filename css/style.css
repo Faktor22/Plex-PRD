@@ -90,6 +90,25 @@ hr {
 }
 
 
+/*==========  Progress bar  =========*/
+
+.progress-container {
+    background: #d22323;
+    position: fixed;
+    top: 93px;
+    z-index: 999;
+    width: 89%;
+    height: 7px;
+    left: 125px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 7px;
+}
+
+
 /*==========  logo/topbar  =========*/
 
 .container {
@@ -255,10 +274,6 @@ main {
     background: var(--grey-bg);
 }
 
-.navigation ul li:hover .tooltiptext {
-    visibility: visible;
-}
-
 .navigation ul li a .icon {
     display: flex;
     height: 60px;
@@ -281,21 +296,6 @@ main {
 
 .active a {
     color: var(--blue-primary) !important;
-}
-
-.tooltiptext {
-    visibility: hidden;
-    width: 130px;
-    right: -100%;
-    top: 50%;
-    background-color: #fff0d0;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    position: absolute;
-    z-index: 3;
 }
 
 .version {
@@ -645,6 +645,9 @@ main {
         font-size: 1.4rem;
         margin: 0;
     }
+    p {
+        font-size: 0.9rem;
+    }
     ol,
     ul.list {
         padding: 0 0 0 2rem;
@@ -652,7 +655,7 @@ main {
     .navigation {
         width: 62px;
         margin-top: 3.5rem;
-        height: calc(100vh - 87px);
+        height: calc(100vh - 70px);
     }
     .navigation ul li a .icon {
         margin: 0 4px;
@@ -662,16 +665,19 @@ main {
     }
     .intro-page {
         margin-right: 10px;
+        height: calc(100vh - 15px);
     }
     .sub-page {
-        height: calc(100vh - 32px) !important;
+        height: calc(100vh - 15px) !important;
     }
     .version {
         left: 26px;
+        bottom: 5px;
     }
     .userstories-todo,
     .userstories-done {
         width: 100%;
+        padding: 0 10px;
     }
 }
 

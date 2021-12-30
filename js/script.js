@@ -1,4 +1,19 @@
-// topbar active button
+/*==========  Progress indicator  =========*/
+
+window.onscroll = function() { scrollIndicator() };
+
+function scrollIndicator() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 80;
+    document.getElementById("progress-indicator").style.width = scrolled + "%";
+
+    console.log(scrolled);
+}
+
+
+/*==========  Topbar active button  =========*/
+
 let topBar = document.querySelectorAll(".topbar nav li a");
 
 topBar.forEach(a => {
@@ -8,7 +23,7 @@ topBar.forEach(a => {
     })
 })
 
-
+/*==========  Topbar active button  =========*/
 
 // let topbar = document.querySelectorAll(".topbar nav li a");
 
