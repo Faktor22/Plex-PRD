@@ -17,40 +17,8 @@
 <body>
     <!--container-->
     <div class="container">
-        <!--logo-->
-        <a href="index.html"><img src="../img/logo.png" alt="Logo Plex" class="logo" /></a>
-        <!--navigation-->
-        <nav class="navigation">
-            <ul>
-                <li>
-                    <a href="contributors.html">
-                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html#intro">
-                        <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="design.html">
-                        <span class="icon"><ion-icon name="color-palette-outline"></ion-icon></span>
-                        <span class="title"></span>
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="code.html">
-                        <span class="icon"><ion-icon name="code-slash-outline"></ion-icon></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="scope.html">
-                        <span class="icon"><ion-icon name="git-compare-outline"></ion-icon></span>
-                    </a>
-                </li>
-            </ul>
-            <p class="version">v.1.0</p>
-        </nav>
+        <!--logo / navigation-->
+        <sidebar-menu></sidebar-menu>
         <!--main-->
         <main>
             <div class="intro-page sub-page">
@@ -61,9 +29,64 @@
                 </div>
 
                 <hr>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra, neque non aliquam tincidunt, urna lacus ornare urna, eu rutrum lectus metus vel lorem. Quisque et iaculis velit. Maecenas vel leo in felis efficitur malesuada. Aenean
-                    ut lectus in est tincidunt cursus vitae eu dui. Nulla ut libero eu sem egestas finibus. Integer mauris justo, finibus in ullamcorper ac, eleifend nec eros. Nullam at lacinia risus, eget varius nisi. In varius tortor at nunc efficitur
-                    aliquam. Mauris quis ultrices metus, vitae tincidunt purus. Fusce ac hendrerit magna. Suspendisse nec nisl ut arcu vestibulum pretium ut sed ipsum. </p>
+                <h2>Back-end</h2>
+                <p>Tijdens het ontwikkelen van het PLeX platform hebben we meerdere vergaderingen gehad, waarbij we rekening hebben gehouden met het bestaande DeX platform. Mede daardoor is er een ontwerp tot stand gekomen, die in het onderstaande architectuur
+                    wordt weergegeven.</p>
+
+                <div class="project-view-container code">
+                    <div class="project-info">
+                        <h3>C1 Context</h3>
+                        <p>Er zijn twee type gebruikers:</p>
+                        <ul class="list">
+                            <li><strong>Docenten(projectleiders)</strong> zijn docenten die projecten kunnen zien en projectlijsten kunnen managen.</li>
+                            <li><strong>Students</strong> zijn studenten die hun toegewezen projectlijst kunnen zien.</li>
+                        </ul>
+                    </div>
+                    <div class="project-image">
+                        <img class="separator" src="../img/plex-c1-context.png" alt="Seperator image" />
+                    </div>
+                </div>
+
+                <div class="project-view-container code">
+                    <div class="project-info">
+                        <h3>C2 Containers</h3>
+                        <p>Dit diagram geeft meer overzicht over de containers die PLeX heeft die samen de complete applicatie zijn.</p>
+                        <ul class="list">
+                            <li><strong>Front-end</strong> betreft de user interface waar de gebruiker projectlijsten kan managen of inzien.</li>
+                            <li><strong>API Back-end</strong> verwerkt alle request van de front-end.</li>
+                            <li><strong>Database</strong> is verantwoordelijk voor het opslaan van de data. Dit wordt gedaan door de back-end.</li>
+                        </ul>
+                    </div>
+                    <div class="project-image">
+                        <img class="separator" src="../img/plex-c2-containers.png" alt="Seperator image" />
+                    </div>
+                </div>
+
+                <div class="project-view-container code">
+                    <div class="project-info">
+                        <h3>C3 Components</h3>
+                        <p>Onderstaande diagram geeft meer inzicht van de API Back-end.</p>
+                        <p>Request handlers:</p>
+                        <ul class="list">
+                            <li><strong>Project controller</strong> handelt alle requests af voor het het managen van de projecten.</li>
+                            <li><strong>Projectlist controller</strong> handelt alle requests af voor het managen van de projectlijsten.</li>
+                        </ul>
+                        <p>Logic:</p>
+                        <ul class="list">
+                            <li><strong>Project service</strong> managed de projecten.</li>
+                            <li><strong>Projectlist service</strong> managed de projectlijsten.</li>
+                        </ul>
+                        <p>Data:</p>
+                        <ul class="list">
+                            <li><strong>Project repository</strong> bewaard en ontvangt project data.</li>
+                            <li><strong>Projectlist repository</strong> bewaard en ontvangt projectlist data.</li>
+                        </ul>
+                    </div>
+                    <div class="project-image">
+                        <img class="separator" src="../img/plex-c3-components.png" alt="Seperator image" />
+                    </div>
+                </div>
+
             </div>
         </main>
     </div>

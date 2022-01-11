@@ -145,7 +145,7 @@ hr {
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 15px 40px;
     border-radius: 10px;
     box-shadow: 0 0.125rem 0.125rem rgb(31 29 81 / 15%);
 }
@@ -191,8 +191,7 @@ main {
     background-color: var(--blue-secondary);
     display: inline-block;
     padding: 10px;
-    margin-top: 2rem;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .sub-heading-green {
@@ -206,6 +205,11 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
+}
+
+.separator {
+    margin: 30px 0;
+    display: block;
 }
 
 
@@ -308,6 +312,36 @@ main {
 }
 
 
+/*==========  Project View  =========*/
+
+.project-view-container {
+    padding: 0 20px;
+    margin: 30px 0 10px 0 !important;
+    gap: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--grey-bg);
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.project-image img {
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.project-info,
+.project-image {
+    flex: 50%;
+}
+
+.project-view-container.code {
+    background: #fff;
+    border: 1px solid var(--grey-bg);
+}
+
+
 /*==========  contributors  =========*/
 
 .contributors-container {
@@ -397,7 +431,7 @@ main {
 
 .contributor-content h3 {
     font-size: 1rem;
-    color: #000;
+    color: var(--blue-primary);
     margin: 0 20px;
 }
 
@@ -421,6 +455,10 @@ main {
     border-radius: 10px;
     padding: 15px;
     margin: 10px 0;
+}
+
+.design {
+    background: var(--grey-bg);
 }
 
 .cards-heading {
@@ -678,6 +716,9 @@ main {
     .userstories-done {
         width: 100%;
         padding: 0 10px;
+    }
+    .project-view-container {
+        display: block;
     }
 }
 

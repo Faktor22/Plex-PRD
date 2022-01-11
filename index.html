@@ -18,49 +18,17 @@
 <body>
     <!--container-->
     <div class="container">
-        <!--logo-->
-        <a href="index.html"><img src="../img/logo.png" alt="Logo Plex" class="logo" /></a>
-        <!--navigation-->
-        <nav class="navigation">
-            <ul>
-                <li>
-                    <a href="contributors.html">
-                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="#intro">
-                        <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="design.html">
-                        <span class="icon"><ion-icon name="color-palette-outline"></ion-icon></span>
-                        <span class="title"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="code.html">
-                        <span class="icon"><ion-icon name="code-slash-outline"></ion-icon></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="scope.html">
-                        <span class="icon"><ion-icon name="git-compare-outline"></ion-icon></span>
-                    </a>
-                </li>
-            </ul>
-            <p class="version">v.1.0</p>
-        </nav>
+        <!--logo / navigation-->
+        <sidebar-menu></sidebar-menu>
         <!--main-->
         <main>
             <!--topbar-->
             <div class="topbar">
                 <nav>
-                    <li><a class="active-topbar btn-plex btn-plex-yellow" href="#intro">Intro & Goal</a></li>
-                    <li><a class="btn-plex btn-plex-white" href="#who">Who’s it for</a></li>
-                    <li><a class="btn-plex btn-plex-white" href="#why">Why build it?</a></li>
-                    <li><a class="btn-plex btn-plex-white" href="#what">What is it?</a></li>
+                    <li><a class="active-topbar btn-plex btn-plex-yellow" href="#intro">Intro & Doel</a></li>
+                    <li><a class="btn-plex btn-plex-white" href="#who">Voor wie</a></li>
+                    <li><a class="btn-plex btn-plex-white" href="#why">Waarom</a></li>
+                    <li><a class="btn-plex btn-plex-white" href="#what">Wat is het?</a></li>
                     <li><a class="btn-plex btn-plex-white" href="design.html">UI/UX</a></li>
                     <li><a class="btn-plex btn-plex-white" href="code.html">Code</a></li>
                     <li><a class="btn-plex btn-plex-blue bg-blue" href="https://github.com/Faktor22/Plex-PRD" target="_blank"><span class="icon-intro"><ion-icon name="logo-github"></ion-icon></span></a></li>
@@ -68,85 +36,108 @@
             </div>
             <!--content-->
             <div class="intro-page">
-                <!--progress bar-->
-                <!-- <div class="progress-container">
-                    <div class="progress-bar" id="progress-indicator" style="background: #6200d9;"></div>
-                </div> -->
                 <a id="intro"></a>
                 <h1>Product Requirements Document</h1>
                 <hr>
-                <h2>Overview</h2>
-                <ul class="list">
-                    <li>Goal:</li>
-                    <li>Stakeholders:
-                        <ul class="list">
-                            <li>Owner: @Name</li>
-                            <li>Design: @Name</li>
-                            <li>Development: @Name</li>
-                        </ul>
-                    </li>
-                </ul>
+                <h2>Intro en doel</h2>
+                <p>Dit product requirements document is bedoeld om de overdraagbaarheid / opvolging van het PLEX project zo efficiënt mogelijk te laten verlopen, zodat gedurende de ontwikkeling en uitbreiding van het project meerdere teams en individuen
+                    onafhankelijk van elkaar hieraan kunnen werken.</p>
 
-                <h3>Background and strategic fit</h3>
-                <p>Provide a short summary of why this initiative is worth investing resources into and explain how it fits into the overall product strategy.</p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra, neque non aliquam tincidunt, urna lacus ornare urna, eu rutrum lectus metus vel lorem. Quisque et iaculis velit. Maecenas vel leo in felis efficitur malesuada. Aenean
-                    ut lectus in est tincidunt cursus vitae eu dui. Nulla ut libero eu sem egestas finibus. Integer mauris justo, finibus in ullamcorper ac, eleifend nec eros. Nullam at lacinia risus, eget varius nisi. In varius tortor at nunc efficitur
-                    aliquam. Mauris quis ultrices metus, vitae tincidunt purus. Fusce ac hendrerit magna. Suspendisse nec nisl ut arcu vestibulum pretium ut sed ipsum. </p>
+                <h3>Stakeholder:</h3>
+                <p>Wilrik De Loose, Robin Agterberg, Pascal Dauphin en VELE anderen.</p>
+
+                <h3>Achtergrond en probleemstelling</h3>
+                <p>Het kost momenteel veel tijd en handmatig werk om projecten van FHICT te beheren en om deze te koppelen en te presenteren aan de (juiste) studenten. Projecten worden momenteel geplaatst in DeX en er is geen oplossing voorhanden waarbij
+                    docenten automatisch via een eigen account inzage hebben in de projecten en om deze te ‘beheren’.</p>
+
+                <h3>Hoofdvraag:</h3>
+                <p>Hoe kan FHICT gemakkelijk geschikte projecten uit het DeX-platform selecteren, zodat studenten hun voorkeuren kunnen geven aan welke projecten ze het meest willen werken en groepen vormen op basis van die voorkeuren?</p>
+
+                <img class="separator" src="../img/seperator.svg" alt="Seperator image" />
 
                 <a id="who"></a>
-                <h3 class="sub-heading-blue">Who’s it for?</h3>
-                <ol>
-                    <li><strong>Fontys University</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet placerat purus. Integer vel bibendum orci. Praesent sagittis imperdiet diam vel venenatis. Nam commodo metus tortor.</li>
-                    <li><strong>Everyday Tech Students</strong> - students who follow the IT training</li>
-                </ol>
+                <h3 class="sub-heading-blue">Voor wie is PLEX bedoeld?</h3>
+                <p><strong>Fontys Projectleiders (PLOU)</strong> De projectleiders zijn verantwoordelijk voor het samenstellen en beheren van de projecten en om deze vervolgens te koppelen aan- en te delen met de studenten.</p>
+
+                <p><strong>Studenten van Fontys</strong></br>
+                    Een student kan de verschillende projectlijsten inzien en zijn of haar voorkeuren opgeven.</p>
+
+                <img class="separator" src="../img/seperator.svg" alt="Seperator image" />
 
                 <a id="why"></a>
-                <h3 class="sub-heading-blue">Why build it?</h3>
+                <h3 class="sub-heading-blue">Waarom een PLEX tool ontwikkelen?</h3>
+                <p>Er zijn verschillende redenen om de PLEX tool te ontwikkelen:</p>
+
                 <ol>
-                    <li>It’s something we personally enjoy using</li>
-                    <li>Early, initial traction from “”</li>
-                    <li>Everyday Tech Student - students who follow the IT training</li>
-                    <li>Tech-risk very low</li>
+                    <li><strong>Verbeteren van de usability voor projectleiders en studenten</strong></br>
+                        Uit gebruikersonderzoek is gebleken dat het momenteel tijdrovend is en omslachtig werkt om projecten te selecteren en te presenteren aan studenten. De PLEX tool kan hierin verbetering leveren door vanuit één centraal punt e.a. te beheren. Daarnaast zal
+                        een gebruiksvriendelijke user interface hieraan ook een positieve bijdrage leveren.</li>
+                    </br>
+                    <li><strong>Kennis en expertise = Optimaal resultaat!</strong></br>
+                        Het PLEX project kan vanuit meerdere architectuurlagen aangevlogen worden. Zowel Media Design (front-end) en Software (back-end) spelen een belangrijke rol in de ontwikkeling van de tool. Maar op de lange termijn kan ook Business aansluiten in de verdere
+                        ontwikkeling van het project. Samen vormen de architectuurlagen een denktank waarin kennis en expertise met elkaar kunnen worden uitgewisseld, om zo tot een optimaal resultaat te komen!</li>
+                    </br>
+                    <li><strong>Toekomstbestendig</strong></br>
+                        PLEX is een lange termijn project dat continue aan verandering onderhevig is; er zijn nieuwe wensen, er komen andere functionaliteiten bij, er worden andere mensen / partners bij betrokken etc. Het PLEX project is dus niet zomaar iets eenmaligs, maar
+                        je werkt aan een tool waar gebruikers echt iets aan hebben en waar altijd aan gewerkt kan worden.
+                    </li>
                 </ol>
+
+                <img class="separator" src="../img/seperator.svg" alt="Seperator image" />
 
                 <a id="what"></a>
-                <h3 class="sub-heading-blue">What is it?</h3>
-                <ol>
-                    <li><strong>Dashboard View (Teachers)</strong> - dashboard of Plex (all Teachers can view this)</li>
-                    <li><strong>Dashboard View (Students)</strong> - dashboard of Plex (all Students can view this)</li>
-                    <li><strong>Project List View</strong> - permalink page for the project list (shows all projects)</li>
-                    <li><strong>Modals</strong> - modals displaying information</li>
-                    <li><strong>Setting View</strong> - [-]</li>
-                </ol>
+                <h3 class="sub-heading-blue">Hoe ziet de tool er uit?</h3>
+                <p>Laatste update: <strong>10-01-2022</strong></p>
+                <p>De PLEX tool is een zogenaamde webportal welke bestaat uit verschillende weergaven. Elke weergave bestaat uit diverse functionaliteiten die o.a. aansluiten bij de wensen van de doelgroep (projectleiders of studenten). De tool is momenteel
+                    alleen ontwikkeld voor desktop.
+                </p>
 
-                <hr>
+                <div class="project-view-container">
+                    <div class="project-info">
+                        <h3>Dashboard weergave projectleiders</h3>
+                        <p>Projectleiders komen als eerste binnen op de dashboard pagina. Hierop zijn de volgende elementen te zien:</p>
+                        <ul class="list">
+                            <li>Overzicht van alle aangemaakte projectlijsten</li>
+                            <li>Sectie om een projectlijst te bewerken met een overzicht van alle projecten die bij deze lijst horen. Ook is er een mogelijkheid om de projectlijst te versturen.</li>
+                        </ul>
+                    </div>
+                    <div class="project-image">
+                        <img class="separator" src="../img/plex-dashboard.png" alt="Seperator image" />
+                    </div>
+                </div>
 
-                <p><strong>Dashboard View (Teachers)</strong></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac scelerisque lorem. Sed neque ipsum, venenatis non condimentum sit amet, accumsan ac enim. Praesent lectus nibh, interdum eget lacus mattis, facilisis facilisis justo.
-                    Etiam a enim ut libero porta sodales. In vitae facilisis tellus. Mauris a felis metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
+                <div class="project-view-container">
+                    <div class="project-info">
+                        <h3>Projectlijst aanmaken voor projectleiders</h3>
+                        <p>Vanuit het dashboard en het menu kan de gebruiker doorklikken naar de pagina om een projectlijst aan te maken. Op deze pagina zijn de volgende elementen te zien:</p>
+                        <ul class="list">
+                            <li>Edit knop om de projectnaam aan te maken / te bewerken</li>
+                            <li>Overzicht van alle beschikbare projecten uit DeX, die aan de projectlijst kunnen worden toegevoegd. Boven de getoonde projecten staan filter en sorteer opties waarmee de gebruiker de resultaten kan verfijnen.</li>
+                            <li>Een project card bevat de titel van het project, een korte beschrijving (bij grid view), de gekoppelde categorien en een knop om een project toe te voegen en te verwijderen.</li>
+                        </ul>
+                    </div>
+                    <div class="project-image">
+                        <img class="separator" src="../img/plex-project-list-grid.png" alt="Seperator image" />
+                    </div>
+                </div>
 
-                <p><strong>Dashboard View (Students)</strong></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac scelerisque lorem. Sed neque ipsum, venenatis non condimentum sit amet, accumsan ac enim. Praesent lectus nibh, interdum eget lacus mattis, facilisis facilisis justo.
-                    Etiam a enim ut libero porta sodales. In vitae facilisis tellus. Mauris a felis metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
+                <div class="project-view-container">
+                    <div class="project-info">
+                        <h3>Dashboard weergave studenten</h3>
+                        <p>Wanneer een projectlijst is gedeeld door een projectleider, kan een student deze online bekijken. De pagina bestaat uit de volgende elementen:
+                        </p>
+                        <ul class="list">
+                            <li>Dashboard waar de projecten uit de lijst onder elkaar staan. De student kan drie voorkeuren opgeven, aangegeven met 1,2 of 3.</li>
+                            <li>Filter optie</li>
+                            <li>Knop om de keuzes te versturen</li>
+                        </ul>
+                    </div>
+                    <div class="project-image">
+                        <img class="separator" src="../img/plex-student.png" alt="Seperator image" />
+                    </div>
+                </div>
 
-                <p><strong>Project List view</strong></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac scelerisque lorem. Sed neque ipsum, venenatis non condimentum sit amet, accumsan ac enim. Praesent lectus nibh, interdum eget lacus mattis, facilisis facilisis justo.
-                    Etiam a enim ut libero porta sodales. In vitae facilisis tellus. Mauris a felis metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
-
-                <p><strong>Modals</strong></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac scelerisque lorem. Sed neque ipsum, venenatis non condimentum sit amet, accumsan ac enim. Praesent lectus nibh, interdum eget lacus mattis, facilisis facilisis justo.
-                    Etiam a enim ut libero porta sodales. In vitae facilisis tellus. Mauris a felis metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
-
-                <p><strong>Setting View</strong></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac scelerisque lorem. Sed neque ipsum, venenatis non condimentum sit amet, accumsan ac enim. Praesent lectus nibh, interdum eget lacus mattis, facilisis facilisis justo.
-                    Etiam a enim ut libero porta sodales. In vitae facilisis tellus. Mauris a felis metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
-
-                <h3 class="sub">User Types</h3>
-                <ol>
-                    <li>Teachers - teachers that are connected to canvas and have an unique ID</li>
-                    <li>Students - students of the IT course at Fontys University of Applied Sciences</li>
-                    <li>Admins</li>
-                </ol>
+                <p>Op de pagina’s UX/UI en Software zijn de resources, guides en sjablonen te vinden waarmee iedereen die dat wil, aan slag kan gaan.</p>
 
             </div>
         </main>
