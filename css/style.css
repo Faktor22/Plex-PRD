@@ -55,6 +55,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--blue-primary);
 }
 
 h1,
@@ -371,7 +372,6 @@ main {
 
 .contributor:hover {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
 }
 
 .contributor-btn {
@@ -515,6 +515,10 @@ main {
     background-color: #ff4081;
 }
 
+.prioriteit {
+    background-color: var(--blue-primary);
+}
+
 .ux {
     background-color: #ff7800;
 }
@@ -541,6 +545,11 @@ main {
     padding: 15px;
     margin-top: 20px;
     border-radius: 5px;
+}
+
+.acceptatie-footer {
+    display: flex;
+    justify-content: space-between;
 }
 
 .acceptatie {
