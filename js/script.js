@@ -45,7 +45,11 @@ topBar.forEach(a => {
 class sideMenu extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <a href="index.html"><img src="../img/logo.png" alt="Logo Plex" class="logo" /></a>
+        <a href="index.html">
+            <object data="/img/logo-plex-prd.svg" type="image/svg+xml" alt="Logo Plex" class="logo">
+                <img src="/img/logo-plex-prd.svg" />
+            </object>
+        </a>
         <div class="navigation">
             <nav>
                 <ul>

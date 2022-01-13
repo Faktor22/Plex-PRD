@@ -684,23 +684,7 @@ main {
 }
 
 
-/*==========  svg animate  =========*/
-
-.logo:hover {
-    animation: arrow 3s ease-in-out;
-}
-
-@keyframes arrow {
-    from {
-        transform: translate(1245.79 751.674);
-    }
-    to {
-        transform: translate(1295 751.674);
-    }
-}
-
-
-/*==========  svg animate  =========*/
+/*==========  To Top  =========*/
 
 #toTop {
     display: none;
