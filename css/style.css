@@ -92,6 +92,10 @@ ul.list {
     padding: 0 3rem;
 }
 
+.list-icon {
+    list-style: none !important;
+}
+
 li {
     color: var(--blue-primary);
     line-height: 1.5rem;
@@ -344,6 +348,12 @@ main {
 .project-image img {
     max-width: 100%;
     margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 22px rgba(31, 29, 89, 0.15);
+}
+
+.project-image img.base {
+    box-shadow: none !important;
 }
 
 .project-info,
@@ -412,6 +422,12 @@ main {
 
 .icon-design {
     margin-right: 8px;
+}
+
+.icon-list {
+    margin-right: 15px;
+    position: relative;
+    top: 4px;
 }
 
 .icon-code {
@@ -687,7 +703,7 @@ main {
 /*==========  svg animate  =========*/
 
 #toTop {
-    /* display: none; */
+    display: none;
     position: fixed;
     bottom: 38px;
     right: 50px;
