@@ -1,3 +1,16 @@
+/*==========  Progress indicator  =========*/
+
+window.onscroll = function() { scrollIndicator() };
+
+function scrollIndicator() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 80;
+    document.getElementById("progress-indicator").style.width = scrolled + "%";
+
+    console.log(scrolled);
+}
+
 /*==========  Topbar active button  =========*/
 
 let topBar = document.querySelectorAll(".topbar nav li a");
@@ -100,3 +113,37 @@ switch (menuLinks) {
         break;
     default:
 }
+
+/*==========  Scroll to Top  =========*/
+const toTopButton = document.getElementById("toTop");
+
+toTopButton.addEventListener("click", function() {
+    // window.scrollTo(0, 0);
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+
+    console.log(toTopButton)
+})
+
+
+
+// // When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function() { scrollFunction() };
+
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//         toTopButton.style.display = "block";
+//     } else {
+//         toTopButton.style.display = "none";
+//     }
+// }
+
+// // When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//     document.body.scrollTop = 0;
+//     document.documentElement.scrollTop = 0;
+// }
