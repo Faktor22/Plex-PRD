@@ -1,15 +1,30 @@
 /*==========  Progress indicator  =========*/
+const scroller = document.querySelector(".intro-page");
+const toTopButton = document.getElementById("toTop");
 
-window.onscroll = function() { scrollIndicator() };
+scroller.addEventListener("scroll", event => {
+    let height = scroller.scrollHeight - scroller.clientHeight;
+    let scrolled = (scroller.scrollTop / height) * 100;
 
-function scrollIndicator() {
-    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let scrolled = (winScroll / height) * 80;
     document.getElementById("progress-indicator").style.width = scrolled + "%";
 
-    console.log(scrolled);
+    // Using Ternary Operator for the IF statement
+    scrolled > 25 ? toTopButton.style.display = "block" : toTopButton.style.display = "none";
+
+    // if (scrolled > 25) {
+    //     toTopButton.style.display = "block";
+    // } else {
+    //     toTopButton.style.display = "none";
+    // }
+
+});
+
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    scroller.scrollTop = 0;
 }
+
 
 /*==========  Topbar active button  =========*/
 
@@ -21,23 +36,6 @@ topBar.forEach(a => {
         a.classList.add("active-topbar")
     })
 })
-
-/*==========  Topbar active button  =========*/
-
-// let topbar = document.querySelectorAll(".topbar nav li a");
-
-// topbar.forEach(a => {
-//     a.addEventListener("click", () => {
-//         resetLinks();
-//         a.classList.add("active-topbar")
-//     })
-// })
-
-// function resetLinks() {
-//     topbar.forEach(a => {
-//         a.classList.remove("active-topbar")
-//     })
-// }
 
 
 /*==========  LeftMenu extends  =========*/
@@ -117,37 +115,3 @@ switch (menuLinks) {
         break;
     default:
 }
-
-/*==========  Scroll to Top  =========*/
-const toTopButton = document.getElementById("toTop");
-
-toTopButton.addEventListener("click", function() {
-    // window.scrollTo(0, 0);
-
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-    })
-
-    console.log(toTopButton)
-})
-
-
-
-// // When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function() { scrollFunction() };
-
-// function scrollFunction() {
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//         toTopButton.style.display = "block";
-//     } else {
-//         toTopButton.style.display = "none";
-//     }
-// }
-
-// // When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-//     document.body.scrollTop = 0;
-//     document.documentElement.scrollTop = 0;
-// }
